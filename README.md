@@ -6,6 +6,12 @@
 docker run -d -p 18123:8123 -p19000:9000 -e CLICKHOUSE_PASSWORD=changeme --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse/clickhouse-server
 ```
 
+## UVICORN:
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+
 ## Clickhouse client:
 
 ```bash
